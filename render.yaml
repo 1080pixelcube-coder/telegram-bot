@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: kucoin-scanner
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python monitoring_14.py
+    plan: free
